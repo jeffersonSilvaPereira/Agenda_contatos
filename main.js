@@ -18,7 +18,7 @@ function adicionarLinha() {
 
     if (contatoNome.includes(inputNome.value)) {
         alert(`O nome : ${inputNome.value} ja foi inserida`);
-    } else if (numero.includes(inputNumero.value)) {
+    } else if (numero.includes(+inputNumero.value)) {
         alert(`esse numero : ${inputNumero.value} ja foi inserido`);
     } else {
         contatoNome.push(inputNome.value)
@@ -45,7 +45,7 @@ function atualizaMediaFinal() {
     const mediaFinal = somaDeContatos();
 
 
-    document.getElementById('contador').innerHTML = mediaFinal;
+    document.getElementById('media-final-valor').innerHTML = mediaFinal;
 }
 
 function somaDeContatos() {
