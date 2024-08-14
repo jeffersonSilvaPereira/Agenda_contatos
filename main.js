@@ -45,7 +45,7 @@ function atualizaMediaFinal() {
     const mediaFinal = somaDeContatos();
 
 
-    document.getElementById('media-final-valor').innerHTML = mediaFinal;
+    document.getElementById('contador').innerHTML = mediaFinal;
 }
 
 function somaDeContatos() {
